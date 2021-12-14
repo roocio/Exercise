@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from app.mongo import project_db
+from app.models import project_db
 
 os.environ["MONGODB_HOST"] = os.environ.get("MONGODB_HOST", "0.0.0.0")
 os.environ["MONGODB_PORT"] = "27017"

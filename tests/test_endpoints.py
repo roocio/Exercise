@@ -10,6 +10,7 @@ def order():
         name="Maximo Cosetti",
         address1="14812 Sutter Ave",
         postal_code="11436",
+        city='Cardales',
         state="NY"
     )
 
