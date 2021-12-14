@@ -1,6 +1,6 @@
 from flask import Flask
 
-from src.enpoints import list_orders, create_order, view_order, quote_order
+from app.endpoints import list_orders, create_order, view_order, quote_order
 
 app = Flask(__name__)
 

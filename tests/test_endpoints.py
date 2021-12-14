@@ -1,17 +1,14 @@
 import pytest
-from src.mongo import Order
+from app.mongo import Order
 
 
 @pytest.fixture
 def order():
     return Order(
-        order_number=1,
-        weight=2,
+        id=1,
         name="Maximo Cosetti",
-        address1="14812 Sutter Ave",
         city="Jamaica",
-        state="NY",
-        postal_code="11436",
+        zipcode=11436,
     )
 
 
