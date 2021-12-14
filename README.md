@@ -6,14 +6,14 @@
 
 * Please read the whole project specification carefully and ask all the questions you feel would help you to do the most accurate solution you can, there's no such thing as a stupid question!
 * You're always welcome to propose and discuss any improvements you find.
-* We expect you invest around ~2 hours of coding in this project once you have everything setup, if you find yourself investing more than that, consider stopping and we can talk about the general experience. It would be great if you can finish it tho!
+* We expect you invest around 2.5 hours of coding in this project once you have everything setup, if you find yourself investing more than that, consider stopping and we can talk about the general experience. It would be great if you can finish it tho!
 * Adding to the previous point, you're still free to invest any time you want, but we'll define a maximum deadline of **2 days** if you are busy with other processes or work and need the extra time.
 * Feel free to spend any time you find convenient before starting to code in order to catch up on technologies or details.
 
 ## Your Goal
 
-There is a very simplistic model named Order. Assume is one product that should
-be sent in any box.
+There is a very simplistic model named Order. Assume it's for one item that should
+be sent in any box and method to a US domestic destination.
 
 Your first task is to complete few endpoints to create, list and get a particular order.
 
@@ -22,7 +22,7 @@ Then, there is another endpoint that should return a "quote", i.e the cost that 
 
 * Signup for a Fedex Developer account: https://www.fedex.com/en-us/developer/web-services.html
 
-Finally, complete the tests that are stubbed.
+Finally, complete the tests that are stubbed and if
 
 
 ## Tech Stack
@@ -43,7 +43,7 @@ GitHub Actions will be run to validate these checks pass on each PR.
 4. Run it: `docker-compose up -d`
 5. Run the tests (Needs a running container): `docker-compose exec app pytest -sv`
 6. You can run `docker-compose exec app bash` to have a shell inside the container.
-7. Example to run a single test:  `docker-compose exec app pytest -sv tests/test_create_order.py::test_create_order_from_product_inventory`
+7. Example to run a single test:  `docker-compose exec app pytest -sv tests/test_endpoints.py::test_list_orders`
 
 
 ## How to submit your solution?
