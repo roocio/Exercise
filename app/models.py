@@ -15,7 +15,18 @@ project_db = client[db]
 
 @dataclasses.dataclass
 class Order:
-    id: int
+    order_number: int    # NTH: make it automatically unique?
+    weight: int = 1
     name: str
+    address1: str
+    address2: str = ""
     city: str
-    zipcode: int
+    state: str
+    postal_code: str
+
+    @classmethod
+    def load(cls, order_number):
+        return cls(**project_db.orders.find_one({"order_number": order_number}))
+
+    def persist(self):
+        project_db.orders.insert_one(dataclasses.as_dict(self))

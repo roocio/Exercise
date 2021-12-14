@@ -1,12 +1,9 @@
-from datetime import datetime
-from random import randint
-
 from flask import request
-
-from app.mongo import project_db
+from app.models import Order
 
 
 def create_order():
+    body = request.get_json()
     # TODO create an Order instance and persist it
     return "Order successfully created!", 200
 
@@ -22,7 +19,8 @@ def view_order(order_id):
 
 
 def quote_order(order_id):
-    # hit FEDEX API for the order detail and return all the result plus the cheapest one
+    # hit FEDEX API using the lib requests
+    # to return the rates results plus the cheapest one
     return {
         "cheapest": {...},
         "rates": [{
