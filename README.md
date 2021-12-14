@@ -11,7 +11,7 @@
 
 ## Your Goal
 
-There is a very simplistic model named Order. Your first task is to complete few enpoints
+There is a very simplistic model named Order. Your first task is to complete few endpoints
 to create, list and get a particular order.
 Then, there is another endpoint that should return a "quote" (the cost that could take us send the package from our warehouse in NY to the order's address). For this should use Fedex's api
 

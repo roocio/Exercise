@@ -3,8 +3,7 @@ from random import randint
 
 from flask import request
 
-from src.mongo import project_db
-
+from app.mongo import project_db
 
 
 def create_order():
@@ -24,5 +23,12 @@ def view_order(order_id):
 
 def quote_order(order_id):
     # hit FEDEX API for the order detail and return all the result plus the cheapest one
-    return {"cheapest": {"method": "foo", "price": "10.2"}, "rates": [{"method": "foo", "price": "10.2"}, {"method": "bar", "price": "15.22"}]}
-
+    return {
+        "cheapest": {...},
+        "rates": [{
+            "method": "foo",
+            "price": "10.2",
+            # ...
+        }, ...
+        ]
+    }
