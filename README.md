@@ -2,15 +2,15 @@
 
 ### Before you start working on the project please read these recommendations
 
-- Please read the whole project specification carefully and ask all the questions you feel would help you to do the most accurate solution you can, there's no such thing as a stupid question!
+- Please read the whole project specification carefully, and ask all the questions you feel would help you to do the most accurate solution you can. There's no such thing as a stupid question!
 - You're always welcome to propose and discuss any improvements you find.
-- We expect you invest around 2.5 hours of coding in this project once you have everything setup, if you find yourself investing more than that, consider stopping and we can talk about the general experience. It would be great if you can finish it tho!
+- We expect you invest around 2.5 hours of coding in this project once you have everything setup, if you find yourself investing more than that, consider stopping and we can talk about the general experience. However, it would be great if you can finish it!
 - Adding to the previous point, you're still free to invest any time you want, but we'll define a maximum deadline of **2 days** if you are busy with other processes or work and need the extra time.
 - Feel free to spend any time you find convenient before starting to code in order to catch up on technologies or details.
 
 ## Your Goal
 
-There is a very simplistic model named Order. Assume it's for one item that should
+There is a very simplistic model named `Order`.` Assume it's for one item that should
 be sent in any box and method to a US domestic destination.
 
 Your first task is to complete a few endpoints like create, list and get a particular order.
@@ -37,24 +37,23 @@ To install the project you should just use basic docker-compose commands.
 GitHub Actions will be run to validate these checks pass on each PR.
 
 1. Clone this repository
-2. Build the container: `docker-compose build`
-3. Run it: `docker-compose up -d`
-4. Run the tests (Needs a running container): `docker-compose exec app pytest -sv`
-5. You can run `docker-compose exec app bash` to have a shell inside the container.
-6. Example to run a single test: `docker-compose exec app pytest -sv tests/test_endpoints.py::test_list_orders`
+2. Build the container: `docker compose build`
+3. Run it: `docker compose up -d`
+4. Run the tests (Needs a running container): `docker compose exec app pytest -sv`
+5. You can run `docker compose exec app bash` to have a shell inside the container.
+6. Example to run a single test: `docker compose exec app pytest -sv tests/test_endpoints.py::test_list_orders`
 
 ## How to submit your solution?
 
-Please open a PR with your changes so we can review it and give you some feedback if there's place for it, your PR must have:
+Please open a PR with your changes so we can review it and give you some feedback if there's place for it. Your PR must have:
 
-- A description of your solution and design decisions you made or anything you think it's worthwile to mention, use the GitHub PR description for this
+- A description of your solution and design decisions you made, or anything you think it's worthwile to mention. Use the GitHub PR description for this
 - The code for your solution
 - CI tests and linting passing
 
 ## How to communicate with us?
 
-We're gonna invite you to our Slack channel as a guest, in this channel, all the people involved in the interviewing process will be present,
-you can post your questions or anything related to the process in there and we'll answer as soon as possible.
+We're going to invite you to our Slack channel as a guest, in this channel, all the people involved in the interviewing process will be present. You can post your questions or anything related to the process in there, and we'll answer as soon as possible.
 
 ## What comes after this project?
 
