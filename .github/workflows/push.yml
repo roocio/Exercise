@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run: docker-compose up -d
+        run: docker compose up -d
       - name: Test with pytest
         run: |
-          docker-compose exec -T app pytest -sv
+          docker compose exec -T app pytest -sv
