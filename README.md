@@ -10,14 +10,14 @@
 
 ## Your Goal
 
-There is a very simplistic model named `Order`.` Assume it contains only one item that should
+There is a very simplistic model named `Order`. Assume it contains only one item that should
 be sent in any box and method to a US domestic destination.
 
 Your first task is to complete a few endpoints like create, list and get a particular Order.
 
-Then, you will need to add two more endpoints in order to return a "quote" for an order, i.e the cost that could take us send the package from our warehouse in NY to the order's address. For this you should point to Fedex's REST API Sandbox Server
+Then, you will need to add two more endpoints in order to return a "quote" for an order, i.e the cost that could take us send the package from our warehouse in NY to the order's address. 
 
-For this part, you can use the following documentation as reference:
+For this you should point to Fedex's REST API Sandbox Server and you can use the following documentation as reference:
 
 - [FedEx API Catalog](https://developer.fedex.com/api/en-us/catalog.html)
 

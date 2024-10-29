@@ -47,6 +47,6 @@ def test_get(clean_db, order):
 
 def test_quote(clean_db, order):
     order.persist()
-    # get /orders/<order.order_number> and check data is correct
+    # get /quote/<order.order_number> and check data is correct
     result = {}
     assert result["cheapest"]["rate"] == "12.3"  # update to whatever be the cheapest price
